@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My TRON USDT DApp</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tronweb3/tronwallet-adapter-trustwallet"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Connect Trust Wallet</h1>
+  <button onclick="connectWallet()">Connect Wallet</button>
+
+  <div id="wallet-info" style="display:none;">
+    <p>Wallet: <span id="wallet-address"></span></p>
+    <p>Balance: <span id="wallet-balance"></span> TRX</p>
+    <button onclick="sendUSDT()">Send 1 USDT</button>
+  </div>
+</body>
+</html>
